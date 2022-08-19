@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e56e5865-3006-4129-b1a9-2f0b9a7bdd54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonTournament/AlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonTournament/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonTournament/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/MyJavaLessonTournament/GameTest.java" afterDir="false" />
+    <list default="true" id="e56e5865-3006-4129-b1a9-2f0b9a7bdd54" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonTournament/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonTournament/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonTournament/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonTournament/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/MyJavaLessonTournament/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/MyJavaLessonTournament/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +55,12 @@
       <recent name="ru.netology.MyJavaLessonTournament" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GameTest.shouldNotRegisterPlayerTwice">
     <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyJavaLessonTournament" />
       <extension name="coverage">
@@ -92,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.shouldNotStartFightWithUnregisteredPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.shouldNotRegisterPlayerTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyJavaLessonTournament" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +102,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonTournament" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonTournament.GameTest" />
-      <option name="METHOD_NAME" value="shouldNotStartFightWithUnregisteredPlayer" />
+      <option name="METHOD_NAME" value="shouldNotRegisterPlayerTwice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.shouldNotRegisterPlayerTwice" />
         <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.GameTest.shouldRegisterPlayer" />
         <item itemvalue="JUnit.GameTest.shouldFindAllPlayers" />
         <item itemvalue="JUnit.GameTest.shouldStartFightOne" />
-        <item itemvalue="JUnit.GameTest.shouldNotStartFightWithUnregisteredPlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +159,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660673284742</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1660913450879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660913450879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,5 +179,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

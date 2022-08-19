@@ -7,11 +7,11 @@ public class Game {
     public ArrayList<Player> players = new ArrayList<>();
 
     public void register(Player player) {
-//        if (player.getName().equals(player)) {
-//            throw new AlreadyExistsException(
-//                    "Player with name " + player + " is already registered."
-//            );
-//        }
+        if (players.contains(player)) {
+            throw new AlreadyExistsException(
+                    "Player with name " + player + " is already registered."
+            );
+        }
         players.add(player);
     }
 

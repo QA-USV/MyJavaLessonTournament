@@ -1,15 +1,13 @@
 package ru.netology.MyJavaLessonTournament;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 
 public class GameTest {
     ArrayList<Player> expected = new ArrayList<>();
-//    ArrayList<Player> actual = new ArrayList<>();
 
     Game game = new Game();
 
@@ -28,6 +26,14 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void shouldNotRegisterPlayerTwice() {
+        game.register(player5);
+
+        Assertions.assertThrows(AlreadyExistsException.class, () -> game.register(player5));
+    }
+
 
     @Test
     public void shouldFindAllPlayers() {
@@ -102,7 +108,7 @@ public class GameTest {
     }
 
     @Test
-    public void shouldNotStartFightWithSinglePlayer() {
+    public void shouldNotStartFightPlayerOnlyInBlueCorner() {
 
         game.register(player1);
         game.register(player2);
@@ -111,5 +117,17 @@ public class GameTest {
         game.register(player5);
 
         Assertions.assertThrows(RuntimeException.class, () -> game.round("Player1", ""));
+    }
+
+    @Test
+    public void shouldNotStartFightPlayerOnlyInRedCorner() {
+
+        game.register(player1);
+        game.register(player2);
+        game.register(player3);
+        game.register(player4);
+        game.register(player5);
+
+        Assertions.assertThrows(RuntimeException.class, () -> game.round("", "Player5"));
     }
 }
